@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #fff;
+    height: 96px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 60px 0px 60px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+label .logo {
+    width: 142px;
+    height: 81px;
+    line-height: 80px;
+
+}
+
+.button {
+    background: linear-gradient(180deg, #79015B 0%, #1F1F1F 99.99%, #1F1F1F 100%);
+    color: #fff;
+    padding: 10px;
+    height: 40px;
+    border-radius: 8px;
+    width: 181px;
+    top: 28px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a.home {
+    color: #79015B;
+    font-weight: bold;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #79015B;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+.card-main {
+    background: rgba(247, 249, 251, 1);
+}
+
+.main h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.card {
+    width: 250px;
+    height: 370px;
+    margin: 5px;
+    box-shadow: 2px 4px 8px rgb(176, 172, 172);
+}
+
+.card a {
+    text-decoration: none;
+    color: #79015B;
+    font-weight: bold;
+}
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+}
+
+.ViewAll {
+    background: linear-gradient(180deg, #79015B 0%, #1F1F1F 99.99%, #1F1F1F 100%);
+    color: #fff;
+    padding: 10px;
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-1 {
+    width: 100%;
+    height: 223px;
+    background: rgba(31, 31, 31, 1);
+}
+
+.footer-1 h1 {
+    color: #fff;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+}
+
+.footer-2 {
+    width: 100%;
+    height: 267px;
+    background: rgba(121, 1, 91, 1);
+    padding: 30px;
+
+}
+
+.foot2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot2 ul li {
+    display: inline-block;
+    margin-right: 40px;
+    line-height: 80px;
+}
+
+.foot2 ul li a {
+    color: #fff;
+}
+
+
+.icons .bi-facebook {
+    color: blue;
+}
+
+.icons .bi-instagram {
+    color: rgba(232, 57, 81, 0.61);
+}
+
+.icons .bi-youtube {
+    color: red;
+}
+
+.icons span {
+    margin-right: 20px;
+    line-height: 80px;
+    color: #fff;
+}
+
+
+.foot3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+
+}
+
+@media (max-width:1200px) {
+    label.logo {
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .card-content {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .foot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 220px;
+        padding: 0 10px 0px 10px;
+    }
+
+
+    .foot3 {
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
